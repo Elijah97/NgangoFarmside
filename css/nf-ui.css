@@ -214,23 +214,37 @@ header.masthead .content {
 
 header.others {
     background-color: #343a40;
-    background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.8)), url('../img/bg_1.jpg') no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.8)), url('../img/Components/bg-farm.JPG') no-repeat;
     background-size: cover;
     background-position: center;
     padding-top: 128px;
     padding-bottom: 128px;
   }
   
-  
-  header.others h1 {
+  header.others header.others_pig h1 {
     font-size: 2rem;
   }
+
+
+  header.others_pig {
+    background-color: #343a40;
+    background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.8)), url('../img/Components/pig.JPG') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
+  header.others_pig h1 {
+    font-size: 2rem;
+  }
+
   @media (min-width: 768px) {
-    header.others {
+    header.others header.others_pig{
       padding-top: 12rem;
       padding-bottom: 12rem;
     }
-    header.others h1 {
+    header.others header.others_pig h1 {
       font-size: 3rem;
     }
   }
@@ -294,8 +308,8 @@ header.others {
   }
 }
 .features-icons {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .features-icons .features-icons-item {
   min-width: 20rem;
@@ -323,7 +337,7 @@ header.others {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url(../img/section_2.jpg) no-repeat center center;
+  background: url(../img/Components/bg-farm.JPG) no-repeat center center;
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -338,6 +352,25 @@ header.others {
   left: 0;
   opacity: 0.7;
 }
+
+.call-to-action-detail {
+  position: relative;
+  /* background-color: #343a40; */
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+} 
+/* 212529 */
+.call-to-action-detail .overlay {
+  position: absolute;
+  /* background-color: #212529; */
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+}
+
 footer.footer {
   min-height: 140px;
   padding: 32px
